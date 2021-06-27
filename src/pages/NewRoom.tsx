@@ -1,15 +1,14 @@
 import React from "react";
 import logoImg from '../assets/logo.svg';
 import bkgImg from "../assets/illustration.svg";
-import googleImg from "../assets/google-icon.svg";
 import { Button } from "../shared/components/Button";
 
 import '../styles/auth.scss';
 
 /**
- * Página home da aplicação
+ * Página de criação de sala da aplicação
  */
-export function Home() {
+export function NewRoom() {
   return (
     <div id="page-auth">
       <aside>
@@ -20,18 +19,18 @@ export function Home() {
       <main>
         <div className="main-content">
           <img src={logoImg} alt="logo letmeask"/>
-          <button className="create-room">
-          <img src={googleImg} alt="logo google"/>
-            Crie uma sala com o Google
-          </button>
-          <div className="separator">Ou entre em uma sala</div>
+          <h2>Criar uma nova sala</h2>
           <form>
             <input
             type="text"
-            placeholder="Digite o codigo da sala"
+            placeholder="Digite o nome da sala"
             />
-            <Button type="submit"> Entrar na sala </Button>
+            <Button type="submit"> Criar sala </Button>
           </form>
+          <p>
+            Quer entrar em uma sala existente?{' '}
+            <a href="https://instagram.com/mauriciolsfilho" target="blank">clique aqui</a>
+          </p>
         </div>
       </main>
     </div>
