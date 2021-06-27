@@ -4,6 +4,7 @@ import bkgImg from "../assets/illustration.svg";
 import { Button } from "../shared/components/Button";
 
 import '../styles/auth.scss';
+import { Link } from "react-router-dom";
 
 /**
  * Página de criação de sala da aplicação
@@ -29,7 +30,7 @@ export function NewRoom() {
           </form>
           <p>
             Quer entrar em uma sala existente?{' '}
-            <a href="https://instagram.com/mauriciolsfilho" target="blank">clique aqui</a>
+            <Link to="/">clique aqui</Link>
           </p>
         </div>
       </main>
